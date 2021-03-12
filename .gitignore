@@ -1,0 +1,4 @@
+client/node_modules
+client/build/bundle.js
+client/src/proto
+server/proto

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package eelf.gitweb;
+
+message Request {}
+message Response {}
+message RepoListRequest {}
+message RepoListResponse {
+    message repo {
+        string name = 1;
+    }
+    repeated repo repos = 1;
+}
+message AuthRequest {
+    string login = 1;
+    string password = 2;
+    string google_access_token = 3;
+}
+message AuthResponse {
+    string text = 1;
+}
+
+service Gitweb {
+    rpc RepoList(RepoListRequest) returns (RepoListResponse);
+    rpc Auth(AuthRequest) returns (AuthResponse);
+}
