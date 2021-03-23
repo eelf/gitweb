@@ -4,8 +4,10 @@ go 1.13
 
 require (
 	github.com/desertbit/timer v0.0.0-20180107155436-c41aec40b27f // indirect
+	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gogo/protobuf v1.3.2
 	github.com/improbable-eng/grpc-web v0.14.0
+	github.com/keegancsmith/shell v0.0.0-20160208231706-ccb53e0c7c5c
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
 	github.com/rs/cors v1.7.0 // indirect
 	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
